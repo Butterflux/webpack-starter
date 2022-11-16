@@ -1,2 +1,1 @@
-# webpack-starter
-Created with CodeSandbox
+# webpack-boilerplate-sass-pug
