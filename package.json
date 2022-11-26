@@ -1,19 +1,37 @@
 {
-  "name": "webpack-boilerplate",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Butterflux/webpack-starter.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Butterflux/webpack-starter/issues"
-  },
-  "homepage": "https://github.com/Butterflux/webpack-starter#readme"
+	"name": "webpack-boilerplate",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "webpack serve --mode development",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Butterflux/webpack-starter.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Butterflux/webpack-starter/issues"
+	},
+	"homepage": "https://github.com/Butterflux/webpack-starter#readme",
+	"devDependencies": {
+		"autoprefixer": "^10.4.13",
+		"css-loader": "^6.7.2",
+		"file-loader": "^6.2.0",
+		"postcss-loader": "^7.0.1",
+		"sass": "^1.56.1",
+		"sass-loader": "^13.2.0",
+		"style-loader": "^3.3.1",
+		"webpack": "^5.75.0",
+		"webpack-cli": "^4.10.0",
+		"webpack-dev-server": "^4.11.1"
+	},
+	"dependencies": {
+		"@popperjs/core": "^2.11.6",
+		"bootstrap": "^5.2.2",
+		"dseg": "^0.46.0"
+	}
 }
