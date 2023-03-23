@@ -1,4 +1,7 @@
 const path = require("path");
+const PugPlugin = require('pug-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+
 
 module.exports = {
 	entry: "./src/js/main.js",
@@ -11,6 +14,12 @@ module.exports = {
 		port: 8080,
 		hot: true,
 	},
+	plugins: [
+		new HtmlWebpackPlugin({
+			template: path.join(__dirname, 'src/views/index.pug'),
+			filename: 'index.html',
+		}),
+	],
 	module: {
 		rules: [
 			{
@@ -46,6 +55,10 @@ module.exports = {
 						},
 					},
 				],
+			},
+			{
+				test: /\.pug$/,
+				loader: '@webdiscus/pug-loader',
 			},
 		],
 	},
